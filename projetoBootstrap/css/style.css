@@ -1,0 +1,124 @@
+
+.logo{
+  width: 200px;
+}
+a{
+  color: black;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+/* Efeito pra menudropdowm auto */
+.navbar .nav-item .dropdown-menu {
+  display: none;
+}
+
+.navbar .nav-item:hover .dropdown-menu {
+  display: block;
+}
+
+.navbar .nav-item .dropdown-menu {
+  margin-top: 0;
+}
+
+/*CSS Bootão Scroll */
+
+#scroll-top-btn {
+  margin-right: 30px;
+  margin-bottom: 75px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+  display: none;
+  z-index: 2;
+}
+
+#scroll-top-btn img {
+  width: 50px;
+}
+
+/* Css para texto */
+p{
+  font-size: 1.2rem;
+  text-indent: 1.25rem;
+  line-height: normal;
+}
+
+
+/* css footer */
+.redes-sociais img{
+  width: 30px;
+  margin: 5px;
+}
+footer{
+  background-color: #ffc107;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#inf-footer{
+  padding-top: 10px;
+  text-align: justify;
+  font-size: 1rem;
+  color: rgb(34, 33, 33);
+}
+
+
+/* css index */
+.mercado{
+  width:200px;
+}
+ .mercado2{
+  width: 180px;
+} 
+.mercado3{
+  width: 150px;
+} 
+.mercado4{
+  margin-top: 5vh;
+} 
+.mercado5{
+  width: 130px;
+} 
+
+
+
+/* CSS Formulario */
+#formulario, #parceiros, #home{
+  background-color: #f8f9fa;
+}
+#titulo-form{
+  padding-top: 5vh;
+}
+#contato{
+  width: 20px;
+}
+#mapa{
+margin-bottom:15vh ;
+}
+
+/* css  Sobre Nós */
+#imgSobre{
+  display: flex;
+  align-self: baseline;
+  justify-content: space-between;
+}
+#imgSobre img{
+  margin: 10px 0 15px;
+  width:100%;
+  height:650px;
+  border-radius: 5px;
+} 
+
+/* parceiros */
+#novidadesParceiros{
+  background-color: #a60303;
+  border-radius: 10px;
+}
+
+
+
+

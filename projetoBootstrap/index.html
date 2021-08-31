@@ -1,0 +1,760 @@
+<!DOCTYPE html><!-- Márcia Alves -->
+<html lang="pt-br">
+
+<!--  Jquery : utilizar um scroll que a partir de  400px do topo do body apareça uma seta ao lado direito da pagina que funciona como retorno suave para o inicio da pagina , aplicar essa função na pagina inicial do projeto.
+
+  //função scroll no arquivo js/scroll.js
+JavaScript: validações.// as validações foram usadas no formulario de ontato e estão no arquivo js/script/js
+
+Css: Estilizar o rodapé usando exclusivamente css.// o rodapé foi todo estilizado com css, arquivo se encontra na pasta css
+
+HTML: Utilizar <aside> e <article>  está presente em todas as páginas do projeto 
+  
+   -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CDN CSS Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <title>Home</title>
+
+</head>
+
+<body id="home">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+      <a class="navbar-brand" href="index.html"><img class="logo img-fluid" src="img/logo-alianca1.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+        aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown active">
+            <a class="nav-link" href="index.html" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Home<span class="sr-only">(página atual)</span>
+            </a>
+            <div class="dropdown-menu bg-warning" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#horti">Horti-fruti</a>
+              <a class="dropdown-item" href="#mercearia">Mercearia</a>
+              <a class="dropdown-item" href="#frios">Frios</a>
+              <a class="dropdown-item" href="#bebidas">Bebidas</a>
+              <a class="dropdown-item" href="#limpeza">Limpeza</a>
+              <a class="dropdown-item" href="#perfumaria">Perfumaria</a>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="sobreNos.html">Sobre </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="parceiros.html">Parceiros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="formulario.html">Contato</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><svg xmlns="http://www.w3.org/2000/svg"
+              width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg></button>
+        </form>
+      </div>
+    </nav>
+  </header>
+
+  <section class=" pb-4" style="background-color: rgb(24, 24, 26);">
+    <section class="container col-8">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        </ol>l>
+
+        <div class="carousel-inner " data-bs-interval="1000">
+          <div class="carousel-item active">
+            <img class="d-block w-100" height="300px" src="img/logo-alianca1.png" alt="Primeiro Slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" height="300px" src="img/logo-alianca1.png" alt="Segundo Slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" height="300px" src="img/logo-alianca1.png" alt="Terceiro Slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" height="300px" src="img/logo-alianca1.png" alt="Quarto Slide">
+          </div>
+
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
+        </a>
+
+      </div>
+    </section>
+  </section>
+
+
+  <div class="row m-auto">
+    <main class="col-sm-8">
+      <h1 id="horti" class="text-center text-uppercase text-break mt-5 p-3 bg-success" style="border-radius: 10px;">
+        Produtos de Horti-fruti</h1>
+      <hr>
+      <div class="row justify-content-between align-content-between align-items-center">
+        <div class="col-md-12 ml-3">
+
+          <div class="row justify-content-center">
+            <div class="card border-success text-center m-4" style="width: 16rem;">
+              <img class="card-img-top my-5 img-fluid" src="img/alianca-productor.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Quiabo</h5>
+                <p class="card-text text-danger">Por R$ 7,89</p>
+                <a href="#" class="btn btn-outline-success"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-basket3-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z" />
+                  </svg></a>
+              </div>
+            </div>
+
+            <div class="card border-success text-center m-4" style="width: 16rem;">
+              <img class="card-img-top my-5 img-fluid" src="img/alianca-productor.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Abóbora</h5>
+                <p class="card-text text-danger">Por R$ 3,05</p>
+                <a href="#" class="btn btn-outline-success"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-basket3-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z" />
+                  </svg></a>
+              </div>
+            </div>
+
+            <div class="card border-success text-center m-4" style="width: 16rem;">
+              <img class="card-img-top my-5 img-fluid" src="img/alianca-productor.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Banana Nanica</h5>
+                <p class="card-text text-danger">Por R$ 3,05</p>
+                <a href="#" class="btn btn-outline-success"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-basket3-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z" />
+                  </svg></a>
+              </div>
+            </div>
+
+            <div class="card border-success text-center m-4" style="width: 16rem;">
+              <img class="card-img-top my-5 img-fluid" src="img/alianca-productor.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Banana Prata</h5>
+                <p class="card-text text-danger">Por R$ 5,05</p>
+                <a href="#" class="btn btn-outline-success"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-basket3-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z" />
+                  </svg></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <aside class="justify-content-center col-sm-4">
+      <section id="novidadesParceiros" class="mt-5 p-1 justify-content-center align-items-center">
+        <div class="card w-70 m-3">
+          <div class="card-body">
+            <img class="img-fluid m-0 promocoes" src="img/alianca-promo.png" alt="promoções">
+          </div>
+        </div>
+
+        <div class="card w-70 m-3">
+          <div class="card-body">
+            <img class="img-fluid m-0 promocoes" src="img/alianca-promo.png" alt="promoções">
+          </div>
+        </div>
+
+      </section>
+    </aside>
+
+    <div class="row m-auto">
+      <article class="col-sm-12">
+        <h1 id="mercearia" class=" text-center text-uppercase text-break mt-5 p-3 bg-warning" style="border-radius: 10px;">Produtos de Mercearia</h1>
+        <hr>
+        <div class="col-md-12">
+          <div class="row justify-content-center">
+
+            <div class="card border-warning text-center m-1" style="width: 16rem;">
+              <img class="card-img-top my-5 img-fluid" src="img/alianca-productor.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Café</h5>
+                <p class="card-text text-danger">Por R$ 11,89</p>
+                <a href="#" class="btn btn-outline-warning"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-basket3-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z" />
+                  </svg></a>
+              </div>
+            </div>
+
+            <div class="card border-warning text-center m-1" style="width: 16rem;">
+              <img class="card-img-top my-5 img-fluid" src="img/alianca-productor.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Macarrão</h5>
+                <p class="card-text text-danger">Por R$ 2,29</p>
+                <a href="#" class="btn btn-outline-warning"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-basket3-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z" />
+                  </svg></a>
+              </div>
+            </div>
+
+            <div class="card border-warning text-center m-1" style="width: 16rem;">
+              <img class="card-img-top my-5 img-fluid" src="img/alianca-productor.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Maionese</h5>
+                <p class="card-text text-danger">Por R$ 5,59</p>
+                <a href="#" class="btn btn-outline-warning"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-basket3-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z" />
+                  </svg></a>
+              </div>
+            </div>
+
+            <div class="card border-warning text-center m-1" style="width: 16rem;">
+              <img class="card-img-top my-5 img-fluid" src="img/alianca-productor.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Açucar Refinado</h5>
+                <p class="card-text text-danger">Por R$ 5,05</p>
+                <a href="#" class="btn btn-outline-warning"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-basket3-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z" />
+                  </svg></a>
+              </div>
+            </div>
+
+            <div class="card border-warning text-center m-1" style="width: 16rem;">
+              <img class="card-img-top my-5 img-fluid" src="img/alianca-productor.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Arroz</h5>
+                <p class="card-text text-danger">Por R$ 6,59</p>
+                <a href="#" class="btn btn-outline-warning"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-basket3-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z" />
+                  </svg></a>
+              </div>
+            </div>
+
+            <div class="card border-warning text-center m-1" style="width: 16rem;">
+              <img class="card-img-top my-5 img-fluid" src="img/alianca-productor.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Feijão</h5>
+                <p class="card-text text-danger">Por R$ 8,75</p>
+                <a href="#" class="btn btn-outline-warning"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-basket3-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z" />
+                  </svg></a>
+              </div>
+            </div>
+
+            <div class="card border-warning text-center m-1" style="width: 16rem;">
+              <img class="card-img-top my-5 img-fluid" src="img/alianca-productor.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Adoçante</h5>
+                <p class="card-text text-danger">Por R$ 18,75</p>
+                <a href="#" class="btn btn-outline-warning"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-basket3-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z" />
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="col-sm-12">
+        <h1 id="frios" class="text-center text-uppercase text-break mt-5 p-3 bg-danger" style="border-radius: 10px;">Frios e Refrigerados</h1>
+        <hr>
+        <div class="col-md-12">
+
+          <div class="row justify-content-center">
+            <div class="card border-danger text-center m-1" style="width: 16rem;">
+              <img class="card-img-top my-5 img-fluid" src="img/alianca-productor.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Iogurte</h5>
+                <p class="card-text text-danger">Por R$ 14,89</p>
+                <a href="#" class="btn btn-outline-danger"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-basket3-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z" />
+                  </svg></a>
+              </div>
+            </div>
+
+            <div class="card border-danger text-center m-1" style="width: 16rem;">
+              <img class="card-img-top my-5 img-fluid" src="img/alianca-productor.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Bacon</h5>
+                <p class="card-text text-danger">Por R$ 32,29</p>
+                <a href="#" class="btn btn-outline-danger"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-basket3-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z" />
+                  </svg></a>
+              </div>
+            </div>
+
+            <div class="card border-danger text-center m-1" style="width: 16rem;">
+              <img class="card-img-top my-5 img-fluid" src="img/alianca-productor.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Presunto</h5>
+                <p class="card-text text-danger">Por R$ 7,59</p>
+                <a href="#" class="btn btn-outline-danger"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-basket3-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z" />
+                  </svg></a>
+              </div>
+            </div>
+
+            <div class="card border-danger text-center m-1" style="width: 16rem;">
+              <img class="card-img-top my-5 img-fluid" src="img/alianca-productor.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Copa</h5>
+                <p class="card-text text-danger">Por R$ 11,05</p>
+                <a href="#" class="btn btn-outline-danger"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-basket3-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z" />
+                  </svg></a>
+              </div>
+            </div>
+
+            <div class="card border-danger text-center m-1" style="width: 16rem;">
+              <img class="card-img-top my-5 img-fluid" src="img/alianca-productor.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Salsicha</h5>
+                <p class="card-text text-danger">Por R$ 15,59</p>
+                <a href="#" class="btn btn-outline-danger"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-basket3-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z" />
+                  </svg></a>
+              </div>
+            </div>
+
+            <div class="card border-danger text-center m-1" style="width: 16rem;">
+              <img class="card-img-top my-5 img-fluid" src="img/alianca-productor.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Queijo</h5>
+                <p class="card-text text-danger">Por R$ 26,75</p>
+                <a href="#" class="btn btn-outline-danger"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-basket3-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z" />
+                  </svg></a>
+              </div>
+            </div>
+
+            <div class="card border-danger text-center m-1" style="width: 16rem;">
+              <img class="card-img-top my-5 img-fluid" src="img/alianca-productor.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Requeijão</h5>
+                <p class="card-text text-danger">Por R$ 8,75</p>
+                <a href="#" class="btn btn-outline-danger"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-basket3-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z" />
+                  </svg></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </article>
+
+      <article class="col-sm-12">
+        <h1 id="bebidas" class="text-center text-break text-uppercase mt-5 p-3 bg-success" style="border-radius: 10px;">Bebidas</h1>
+        <hr>
+        <div class="col-md-12">
+          <div class="row justify-content-center">
+            <div class="card border-success text-center m-1" style="width: 16rem;">
+              <img class="card-img-top my-5 img-fluid" src="img/alianca-productor.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Refrigerante</h5>
+                <p class="card-text text-danger">Por R$ 9,89</p>
+                <a href="#" class="btn btn-outline-success"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-basket3-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z" />
+                  </svg></a>
+              </div>
+            </div>
+
+            <div class="card border-success text-center m-1" style="width: 16rem;">
+              <img class="card-img-top my-5 img-fluid" src="img/alianca-productor.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Suco de Laranja</h5>
+                <p class="card-text text-danger">Por R$ 14,79</p>
+                <a href="#" class="btn btn-outline-success"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-basket3-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z" />
+                  </svg></a>
+              </div>
+            </div>
+
+            <div class="card border-success text-center m-1" style="width: 16rem;">
+              <img class="card-img-top my-5 img-fluid" src="img/alianca-productor.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Água</h5>
+                <p class="card-text text-danger">Por R$ 7,59</p>
+                <a href="#" class="btn btn-outline-success"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-basket3-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z" />
+                  </svg></a>
+              </div>
+            </div>
+
+            <div class="card border-success text-center m-1" style="width: 16rem;">
+              <img class="card-img-top my-5 img-fluid" src="img/alianca-productor.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Suco de Uva</h5>
+                <p class="card-text text-danger">Por R$ 5,05</p>
+                <a href="#" class="btn btn-outline-success"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-basket3-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z" />
+                  </svg></a>
+              </div>
+            </div>
+
+            <div class="card border-success text-center m-1" style="width: 16rem;">
+              <img class="card-img-top my-5 img-fluid" src="img/alianca-productor.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Energético</h5>
+                <p class="card-text text-danger">Por R$ 8,59</p>
+                <a href="#" class="btn btn-outline-success  "><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-basket3-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z" />
+                  </svg></a>
+              </div>
+            </div>
+
+            <div class="card border-success text-center m-1" style="width: 16rem;">
+              <img class="card-img-top my-5 img-fluid" src="img/alianca-productor.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Cerveja</h5>
+                <p class="card-text text-danger">Por R$ 26,75</p>
+                <a href="#" class="btn btn-outline-success"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-basket3-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z" />
+                  </svg></a>
+              </div>
+            </div>
+
+            <div class="card border-success text-center m-1" style="width: 16rem;">
+              <img class="card-img-top my-5 img-fluid" src="img/alianca-productor.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Requeijão</h5>
+                <p class="card-text text-danger">Por R$ 8,75</p>
+                <a href="#" class="btn btn-outline-success"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-basket3-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z" />
+                  </svg></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </article>
+
+      <article class="col-sm-12">
+        <h1 id="limpeza" class="text-center text-break text-uppercase mt-5 p-3 bg-warning" style="border-radius: 10px;">Produtos de Limpeza</h1>
+        <hr>
+        <div class="col-md-12">
+          <div class="row justify-content-center">
+            <div class="card border-warning  text-center m-1" style="width: 16rem;">
+              <img class="card-img-top my-5 img-fluid" src="img/alianca-productor.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Papel Higienico</h5>
+                <p class="card-text text-danger">Por R$ 28,89</p>
+                <a href="#" class="btn btn-outline-warning"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-basket3-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z" />
+                  </svg></a>
+              </div>
+            </div>
+
+            <div class="card border-warning text-center m-1" style="width: 16rem;">
+              <img class="card-img-top my-5 img-fluid" src="img/alianca-productor.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Aguá Sanitária</h5>
+                <p class="card-text text-danger">Por R$ 4,79</p>
+                <a href="#" class="btn btn-outline-warning"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-basket3-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z" />
+                  </svg></a>
+              </div>
+            </div>
+
+            <div class="card border-warning text-center m-1" style="width: 16rem;">
+              <img class="card-img-top my-5 img-fluid" src="img/alianca-productor.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title ">Detergente</h5>
+                <p class="card-text text-danger">Por R$ 1,59</p>
+                <a href="#" class="btn btn-outline-warning"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-basket3-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z" />
+                  </svg></a>
+              </div>
+            </div>
+
+            <div class="card border-warning text-center m-1" style="width: 16rem;">
+              <img class="card-img-top my-5 img-fluid" src="img/alianca-productor.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Amaciante</h5>
+                <p class="card-text text-danger">Por R$ 9,95</p>
+                <a href="#" class="btn btn-outline-warning"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-basket3-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z" />
+                  </svg></a>
+              </div>
+            </div>
+
+            <div class="card border-warning text-center m-1" style="width: 16rem;">
+              <img class="card-img-top my-5 img-fluid" src="img/alianca-productor.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Tira Manchas</h5>
+                <p class="card-text text-danger">Por R$ 18,59</p>
+                <a href="#" class="btn btn-outline-warning  "><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-basket3-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z" />
+                  </svg></a>
+              </div>
+            </div>
+
+            <div class="card border-warning text-center m-1" style="width: 16rem;">
+              <img class="card-img-top my-5 img-fluid" src="img/alianca-productor.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Sabão em Pó</h5>
+                <p class="card-text text-danger">Por R$ 16,75</p>
+                <a href="#" class="btn btn-outline-warning"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-basket3-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z" />
+                  </svg></a>
+              </div>
+            </div>
+
+            <div class="card border-warning text-center m-1" style="width: 16rem;">
+              <img class="card-img-top my-5 img-fluid" src="img/alianca-productor.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Multiuso</h5>
+                <p class="card-text text-danger">Por R$ 12,75</p>
+                <a href="#" class="btn btn-outline-warning"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-basket3-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z" />
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="col-sm-12 pb-5">
+        <h1 id="perfumaria" class="text-center text-break text-uppercase mt-5 p-3 bg-danger"
+          style="border-radius: 10px;">Produtos de Perfumaria</h1>
+        <hr>
+        <div class="col-md-12">
+          <div class="row justify-content-center">
+            <div class="card border-danger text-center m-1" style="width: 16rem;">
+              <img class="card-img-top my-5 img-fluid" src="img/alianca-productor.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Kit Shampoo</h5>
+                <p class="card-text text-danger">Por R$ 19,89</p>
+                <a href="#" class="btn btn-outline-danger"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-basket3-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z" />
+                  </svg></a>
+              </div>
+            </div>
+
+            <div class="card border-danger text-center m-1" style="width: 16rem;">
+              <img class="card-img-top my-5 img-fluid" src="img/alianca-productor.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Kit Hidratante</h5>
+                <p class="card-text text-danger">Por R$ 25,29</p>
+                <a href="#" class="btn btn-outline-danger"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-basket3-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z" />
+                  </svg></a>
+              </div>
+            </div>
+
+            <div class="card border-danger text-center m-1" style="width: 16rem;">
+              <img class="card-img-top my-5 img-fluid" src="img/alianca-productor.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Absorvente</h5>
+                <p class="card-text text-danger">Por R$ 18,59</p>
+                <a href="#" class="btn btn-outline-danger"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-basket3-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z" />
+                  </svg></a>
+              </div>
+            </div>
+
+            <div class="card border-danger text-center m-1" style="width: 16rem;">
+              <img class="card-img-top my-5 img-fluid" src="img/alianca-productor.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Shampoo</h5>
+                <p class="card-text text-danger">Por R$ 8 ,05</p>
+                <a href="#" class="btn btn-outline-danger"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-basket3-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z" />
+                  </svg></a>
+              </div>
+            </div>
+
+            <div class="card border-danger text-center m-1" style="width: 16rem;">
+              <img class="card-img-top my-5 img-fluid" src="img/alianca-productor.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Shamppoo Infantil</h5>
+                <p class="card-text text-dangers">Por R$ 8,59</p>
+                <a href="#" class="btn btn-outline-danger"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-basket3-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z" />
+                  </svg></a>
+              </div>
+            </div>
+
+            <div class="card border-danger text-center m-1" style="width: 16rem;">
+              <img class="card-img-top my-5 img-fluid" src="img/alianca-productor.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Kit Desodorante</h5>
+                <p class="card-text text-danger">Por R$ 16,75</p>
+                <a href="#" class="btn btn-outline-danger"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-basket3-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z" />
+                  </svg></a>
+              </div>
+            </div>
+
+            <div class="card border-danger text-center m-1" style="width: 16rem;">
+              <img class="card-img-top my-5 img-fluid" src="img/alianca-productor.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Desodorante</h5>
+                <p class="card-text text-danger">Por R$ 18,75</p>
+                <a href="#" class="btn btn-outline-danger"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-basket3-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z" />
+                  </svg></a>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+
+  </div>
+
+  </div>
+
+
+
+
+
+
+  <article>
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+    </div>
+    <span id="scroll-top-btn"><img src="img/up-arrow.png" alt=""></span>
+  </article>
+  
+
+
+  
+
+  <footer>
+    <img class="logo" src="img/logo-alianca1.png" alt="Logo da Empresa">
+    <section id="inf-footer">
+      <p>©Todos os direitos Reservados</p>
+      <p>Aliança Supermarket - Rua: Dona Quiteria Vilela, s/n - Centro -
+        Capoeiras/PE - Telefone: (87) 99654-5701</p>
+    </section>
+    <section>
+      <a class="redes-sociais" href="#"><img src="img/instagram.png" alt="Icone de acesso ao Instagram da empresa"></a>
+      <a class="redes-sociais" href="#"><img src="img/facebook.png" alt="Icone de acesso ao Facebook da empresa"></a>
+      <a class="redes-sociais" href="https://api.whatsapp.com/send?phone=SeuNúmero" target="_black"><img
+          src="img/whatsapp.png" alt="Icone de contato pelo Whatsapp"></a>
+    </section>
+  </footer>
+
+</body>
+<!-- CDN jQuery -->
+<!-- <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.slim.js"></script> -->
+
+<!-- CDN JS Bootstrap -->
+<script src=" https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+  </script>
+
+<script src="js/scroll.js"></script>
+
+</html>
